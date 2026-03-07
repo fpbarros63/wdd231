@@ -68,6 +68,7 @@ header {
 
 nav {
   background-color: var(--nav-bg);
+  color: var(--text-light);
 }
 
 .nav-content {
@@ -79,7 +80,8 @@ nav {
   display: flex;
 }
 
-nav a {
+nav a,
+nav a:visited {
   color: var(--text-light);
   text-decoration: none;
   padding: 1rem;
