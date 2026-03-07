@@ -109,7 +109,7 @@ main {
 }
 
 h1 {
-  margin: 0 0 1.5rem;
+  margin: 1rem 0 1rem;
   font-size: 2.2rem;
 }
 
@@ -151,21 +151,23 @@ h1 {
 }
 
 .filters {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
 }
 
 .filters button {
-  padding: 0.9rem;
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+  padding: 0.8rem 0.2rem;
   border: 1px solid #b9b9b9;
   border-radius: 8px;
   background-color: #ededed;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .filters button:hover {
@@ -177,11 +179,14 @@ h1 {
   grid-template-columns: 1fr;
   gap: 0.9rem;
 }
-
+#courseContainer div {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
 .course-card {
   padding: 1rem;
   border: 1px solid #b9b9b9;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #efefef;
   text-align: center;
   font-weight: 700;
