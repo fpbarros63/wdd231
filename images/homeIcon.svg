@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Graduation cap icon">
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- outer ring -->
+  <circle cx="64" cy="64" r="47" fill="#fff" stroke="#d4a017" stroke-width="10"/>
+  <path d="M64 17 A47 47 0 0 1 111 64" fill="#fff" stroke="#78ad46" stroke-width="10" stroke-linecap="butt"/>
+  <path d="M17 64 A47 47 0 0 0 64 111" fill="none" stroke="#78ad46" stroke-width="10" stroke-linecap="butt"/>
+
+  <!-- graduation cap -->
+  <g filter="url(#softShadow)">
+    <!-- top board -->
+    <polygon points="64,33 26,48 64,64 102,48" fill="#58585d"/>
+
+    <!-- highlight lines -->
+    <path d="M40 49 L58 43" stroke="#a3a3a8" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+    <path d="M58 58 L80 49" stroke="#8a8a8f" stroke-width="2.2" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- cap body -->
+    <path d="M37 56 L37 82 L64 96 L91 82 L91 56 L64 67 Z" fill="#3f3f44"/>
+
+    <!-- tassel -->
+    <path d="M34 50 L34 79" stroke="#6a6a6f" stroke-width="3" stroke-linecap="round"/>
+    <rect x="26" y="78" width="10" height="15" rx="3" fill="#3f3f44"/>
+    <circle cx="31" cy="94" r="1.8" fill="#3f3f44"/>
+  </g>
+</svg>
