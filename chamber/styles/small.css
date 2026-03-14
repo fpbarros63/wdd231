@@ -8,7 +8,7 @@
   --card-bg: #FFFFFF;
   --list-stripe-color: #EDF4F6;
   --menu-border-color: rgba(255, 255, 255, 0.35);
-  --nav-active-bg: rgba(255, 255, 255, 0.15);
+  --nav-active-bg: #2E5B7A;;
   --view-btn-active-bg: #DCEFF0;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   --card-shadow-hover: 0 8px 18px rgba(0, 0, 0, 0.18);
@@ -43,6 +43,10 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.container h1 {
+  padding-top: 1rem;
 }
 
 header {
