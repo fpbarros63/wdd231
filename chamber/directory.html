@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recife Chamber of Commerce Directory</title>
+    <meta name="description" content="Business directory for the Recife Chamber of Commerce.">
+    <meta name="author" content="Francisco de Paula Barros">
+
+    <meta property="og:title" content="Recife Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore local businesses and members of the Recife Chamber of Commerce.">
+    <meta property="og:image" content="https://fpbarros63.github.io/wdd231/chamber/images/social-preview.webp">
+    <meta property="og:url" content="https://fpbarros63.github.io/wdd231/chamber/directory.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="site-branding">
+                <img src="images/logo.svg" alt="Recife Chamber of Commerce logo" width="20" height="20">
+                <div class="brand-text">
+                    <span class="brand-name">Recife</span>
+                    <span class="brand-subtitle">Chamber of Commerce</span>
+                </div>
+            </div>
+
+            <button id="menuButton" aria-label="Open navigation menu"></button>
+
+            <nav id="navMenu">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Business Directory</h1>
+
+        <div class="view-toggle">
+            <button id="gridView" aria-label="Grid view" class="view-btn active-view">
+                ⊞
+            </button>
+            <button id="listView" aria-label="List view" class="view-btn">
+                ☰
+            </button>
+        </div>
+
+        <section id="members" class="grid"></section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <p><strong>Recife Chamber of Commerce</strong> - Av. Boa Viagem, Recife - PE</p>
+                <p>+55 (81) 3333-4444, info@recifechamber.org</p>
+                
+            </div>
+
+            <div class="footer-dev">
+                <p>&copy; <span id="currentYear"></span> Francisco de Paula Barros</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
