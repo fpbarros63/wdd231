@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recife Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Recife Chamber of Commerce. Discover events, weather, and featured local businesses.">
+    <meta name="author" content="Francisco de Paula Barros">
+
+    <meta property="og:title" content="Recife Chamber of Commerce">
+    <meta property="og:description"
+        content="Welcome to the Recife Chamber of Commerce. Discover events, weather, and featured local businesses.">
+    <meta property="og:image" content="https://fpbarros63.github.io/wdd231/chamber/images/social-preview.webp">
+    <meta property="og:url" content="https://fpbarros63.github.io/wdd231/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="site-branding">
+                <img src="images/logo.svg" alt="Recife Chamber of Commerce logo" width="20" height="20">
+                <div class="brand-text">
+                    <span class="brand-name">Recife</span>
+                    <span class="brand-subtitle">Chamber of Commerce</span>
+                </div>
+            </div>
+
+            <button id="menuButton" aria-label="Open navigation menu"></button>
+
+            <nav id="navMenu">
+                <ul class="navigation">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 38rem)">
+                <img src="images/hero-small.webp" alt="Boa Viagem beachfront in Recife, Brazil" class="hero-image" width="1200"
+                    height="700">
+            </picture>
+
+            <div class="hero-overlay">
+                <h1>Welcome to Recife Chamber of Commerce</h1>
+                <p>Connecting local business, innovation, and community growth.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="home-sections">
+            <section class="home-card events-section">
+                <h2>Current Events</h2>
+                <div class="card-content">
+                    <article class="event-item">
+                        <h3>Business Networking Breakfast</h3>
+                        <p>Meet local entrepreneurs and business leaders for a morning of connections and opportunities.
+                        </p>
+                        <p><strong>Date:</strong> March 25</p>
+                    </article>
+
+                    <article class="event-item">
+                        <h3>Startup Innovation Workshop</h3>
+                        <p>Learn practical strategies for innovation, digital growth, and small business development.
+                        </p>
+                        <p><strong>Date:</strong> March 27</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="home-card weather-section">
+                <h2>Weather</h2>
+                <div class="card-content">
+                    <div class="current-weather">
+                        <p class="weather-temp">
+                            <span id="currentTemp">Loading...</span>
+                        </p>
+            
+                        <p class="weather-desc">
+                            <img id="weatherIcon" src="" alt="Weather icon" width="60" height="60">
+                            <span id="weatherDesc">Loading current weather...</span>
+                        </p>
+                    </div>
+            
+                    <div class="forecast">
+                        <h3>3-Day Forecast</h3>
+                        <div id="forecastContainer" class="forecast-list"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlightContainer" class="spotlights-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <p><strong>Recife Chamber of Commerce</strong> - Av. Boa Viagem, Recife - PE</p>
+                <p>+55 (81) 3333-4444, info@recifechamber.org</p>
+            </div>
+
+            <div class="footer-dev">
+                <p>&copy; <span id="currentYear"></span> Francisco de Paula Barros | WDD 231</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

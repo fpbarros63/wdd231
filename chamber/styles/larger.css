@@ -61,3 +61,55 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
+
+@media only screen and (min-width: 38rem) {
+  .hero {
+    min-height: 420px;
+  }
+
+  .hero picture,
+  .hero-image {
+    height: 100%;
+  }
+
+  .hero-image {
+    min-height: 420px;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    max-width: 520px;
+    border-radius: 6px;
+  }
+
+  .home-sections {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .forecast-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  .spotlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 38rem) {
+  .forecast-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

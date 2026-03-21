@@ -284,3 +284,237 @@ footer {
 .footer-container p {
   margin: 0.35rem 0;
 }
+
+/* ========== HOME PAGE ========== */
+
+.hero {
+
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.hero-image {
+  width: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  background: linear-gradient(to top, rgba(11, 60, 93, 0.92), rgba(11, 60, 93, 0.55));
+  color: var(--text-light);
+  padding: 1.5rem 1rem;
+}
+
+.hero-overlay h1 {
+  margin: 0 0 0.75rem 0;
+  color: var(--text-light);
+  font-size: 2rem;
+}
+
+.hero-overlay p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.85rem 1.2rem;
+  border-radius: 0.35rem;
+  transition: opacity 0.2s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+.home-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-card,
+.spotlight-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: var(--card-shadow);
+}
+
+.home-card h2,
+.spotlights-section h2 {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  font-size: 1.2rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.event-item + .event-item {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.event-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.event-item p {
+  margin: 0.35rem 0;
+  line-height: 1.5;
+}
+
+.current-weather {
+  margin-bottom: 1rem;
+}
+
+.weather-temp {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.weather-desc {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.forecast h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.forecast-item {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  background-color: var(--list-stripe-color);
+}
+
+.forecast-day,
+.forecast-temp {
+  margin: 0.25rem 0;
+}
+
+.forecast-day {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.spotlights-section {
+  margin-bottom: 2rem;
+}
+
+.spotlights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.spotlight-card {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.spotlight-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.spotlight-card img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
+
+.spotlight-card p {
+  margin: 0.4rem 0;
+  line-height: 1.45;
+}
+
+.spotlight-card a {
+  color: var(--primary-color);
+  word-break: break-word;
+}
+
+.current-weather {
+  margin-bottom: 1rem;
+}
+
+.weather-temp {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.weather-desc {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+#weatherIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.forecast-item {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  background-color: var(--list-stripe-color);
+}
+
+.forecast-day,
+.forecast-temp {
+  margin: 0.25rem 0;
+}
+
+.forecast-day {
+  font-weight: 700;
+  color: var(--primary-color);
+}

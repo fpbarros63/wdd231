@@ -4,62 +4,71 @@
     "address": "Av. Rio Branco, 193, Recife Antigo, Recife - PE",
     "phone": "+55 (81) 3419-8000",
     "website": "https://www.portodigital.org",
-    "image": "porto-digital.svg"
+    "image": "porto-digital.svg",
+    "membership": 3
   },
   {
     "name": "CESAR",
     "address": "Rua Bione, 220, Recife Antigo, Recife - PE",
     "phone": "+55 (81) 3419-6700",
     "website": "https://www.cesar.org.br",
-    "image": "cesar.webp"
+    "image": "cesar.webp",
+    "membership": 3
   },
   {
     "name": "MV Sistemas",
     "address": "Av. República do Líbano, 251, Recife - PE",
     "phone": "+55 (81) 3972-7000",
     "website": "https://www.mv.com.br",
-    "image": "mv.png"
+    "image": "mv.png",
+    "membership": 2
   },
   {
     "name": "Shopping RioMar Recife",
     "address": "Av. República do Líbano, 251, Recife - PE",
     "phone": "+55 (81) 3877-1399",
     "website": "https://www.riomarrecife.com.br",
-    "image": "riomar.svg"
+    "image": "riomar.svg",
+    "membership": 3
   },
   {
     "name": "Ferreira Costa",
     "address": "Av. Mal. Mascarenhas de Moraes, 2967, Recife - PE",
     "phone": "+55 (81) 3327-5555",
     "website": "https://www.ferreiracosta.com",
-    "image": "ferreira-costa.svg"
+    "image": "ferreira-costa.svg",
+    "membership": 2
   },
   {
     "name": "Smart Fit Boa Viagem",
     "address": "Av. Conselheiro Aguiar, Recife - PE",
     "phone": "+55 (81) 4003-0000",
     "website": "https://www.smartfit.com.br",
-    "image": "smartfit.png"
+    "image": "smartfit.png",
+    "membership": 1
   },
   {
     "name": "Hotel Atlante Plaza",
     "address": "Av. Boa Viagem, 5426, Recife - PE",
     "phone": "+55 (81) 3302-3333",
     "website": "https://www.atlanteplaza.com.br",
-    "image": "hotel-plaza.png"
+    "image": "hotel-plaza.png",
+    "membership": 3
   },
   {
     "name": "Café São Braz",
     "address": "Av. Domingos Ferreira, Recife - PE",
     "phone": "+55 (81) 3465-0000",
     "website": "https://www.saobraz.com.br/",
-    "image": "cafe-sao-braz.svg"
+    "image": "cafe-sao-braz.svg",
+    "membership": 1
   },
   {
     "name": "Hospital Português",
     "address": "Av. Gov. Agamenon Magalhães, 4760, Recife - PE",
     "phone": "+55 (81) 3416-1122",
     "website": "https://www.hportugues.com.br",
-    "image": "hospital-portugues.png"
+    "image": "hospital-portugues.png",
+    "membership": 2
   }
 ]
