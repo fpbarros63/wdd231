@@ -395,6 +395,14 @@ footer {
 .weather-desc {
   margin: 0;
   line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#weatherIcon {
+  width: 50px;
+  height: 50px;
 }
 
 .forecast h3 {
@@ -467,58 +475,6 @@ footer {
   color: var(--primary-color);
   word-break: break-word;
 }
-
-.current-weather {
-  margin-bottom: 1rem;
-}
-
-.weather-temp {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin: 0 0 0.5rem 0;
-}
-
-.weather-desc {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 0;
-}
-
-#weatherIcon {
-  width: 50px;
-  height: 50px;
-}
-
-.forecast h3 {
-  margin-top: 0;
-  color: var(--primary-color);
-}
-
-.forecast-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
-}
-
-.forecast-item {
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 0.75rem;
-  background-color: var(--list-stripe-color);
-}
-
-.forecast-day,
-.forecast-temp {
-  margin: 0.25rem 0;
-}
-
-.forecast-day {
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
 .visually-hidden {
   position: absolute;
   left: -9999px;

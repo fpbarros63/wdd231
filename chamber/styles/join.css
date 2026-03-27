@@ -55,10 +55,10 @@ textarea {
 
 /* Improve eye-tracking for required */
 input:required {
-    border-left: 5px solid red;
+    border-left: 5px solid #FF0000;
 }
 input:required:valid {
-    border-left: 5px solid green;
+    border-left: 5px solid #008000;
 }
 
 /* Radio buttons grouping */
@@ -116,10 +116,10 @@ input[type="submit"]:hover {
     transform: translateY(20px);
 }
 /* Staggering the animation load */
-.level-card:nth-child(1) { animation-delay: 0.1s; border-color: gray; }
+.level-card:nth-child(1) { animation-delay: 0.1s; border-color: #808080; }
 .level-card:nth-child(2) { animation-delay: 0.3s; border-color: #cd7f32; }
-.level-card:nth-child(3) { animation-delay: 0.5s; border-color: silver; }
-.level-card:nth-child(4) { animation-delay: 0.7s; border-color: gold; }
+.level-card:nth-child(3) { animation-delay: 0.5s; border-color: #C0C0C0; }
+.level-card:nth-child(4) { animation-delay: 0.7s; border-color: #FFD700; }
 
 @keyframes fadeSlideUp {
     to {
@@ -174,7 +174,7 @@ dialog::backdrop {
     cursor: pointer;
     color: #444;
 }
-.close-modal:hover { color: red; }
+.close-modal:hover { color: #FF0000; }
 
 /* Thank You Page */
 .thank-you-card {
@@ -199,7 +199,7 @@ dialog::backdrop {
 }
 .cta-button {
     background-color: var(--secondary-color, #c8102e);
-    color: white;
+    color: #FFFFFF;
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
