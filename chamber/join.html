@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Recife Chamber of Commerce</title>
+    <meta name="description" content="Apply to join the Recife Chamber of Commerce membership program today.">
+    <meta name="author" content="Francisco de Paula Barros">
+
+    <meta property="og:title" content="Join Recife Chamber of Commerce">
+    <meta property="og:description" content="Apply for a chamber of commerce membership today.">
+    <meta property="og:image" content="https://fpbarros63.github.io/wdd231/chamber/images/social-preview.webp">
+    <meta property="og:url" content="https://fpbarros63.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="site-branding">
+                <img src="images/logo.svg" alt="Recife Chamber of Commerce logo" width="20" height="20">
+                <div class="brand-text">
+                    <span class="brand-name">Recife</span>
+                    <span class="brand-subtitle">Chamber of Commerce</span>
+                </div>
+            </div>
+
+            <button id="menuButton" aria-label="Open navigation menu"></button>
+
+            <nav id="navMenu">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container join-main">
+        <h1>Chamber Membership Application</h1>
+        <div class="join-layout">
+            <section class="form-section">
+                <form method="get" action="thankyou.html" id="join-form">
+                    <fieldset class="applicant-info">
+                        <legend>Applicant Information</legend>
+                        <label>
+                            First Name*
+                            <input type="text" name="first" title="First Name" required autocomplete="given-name">
+                        </label>
+                        <label>
+                            Last Name*
+                            <input type="text" name="last" title="Last Name" required autocomplete="family-name">
+                        </label>
+                        <label>
+                            Organizational Title
+                            <input type="text" name="orgtitle" title="Organizational Title (e.g., Manager, Developer)" autocomplete="organization-title" pattern="^[a-zA-Z\- ]{7,}$">
+                        </label>
+                        <label>
+                            Email Address*
+                            <input type="email" name="email" title="Email Address" placeholder="example@business.com" required autocomplete="email">
+                        </label>
+                        <label>
+                            Mobile Phone*
+                            <input type="tel" name="phone" title="Mobile Phone Number" required autocomplete="tel">
+                        </label>
+                        <label>
+                            Business/Organization Name*
+                            <input type="text" name="business" title="Business/Organization Name" required autocomplete="organization">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="membership-info">
+                        <legend>Membership Level</legend>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="np" required> NP Membership (Non Profit)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="bronze"> Bronze Membership
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="silver"> Silver Membership
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="gold"> Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="business-info">
+                        <legend>Business Description</legend>
+                        <label>
+                            Briefly describe your organization
+                            <textarea name="description" title="Business/Organization Description"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <section class="membership-cards">
+                <div class="level-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations.</p>
+                    <a href="#" class="open-modal" data-modal="np-modal">View Benefits</a>
+                </div>
+                <div class="level-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry level for small businesses.</p>
+                    <a href="#" class="open-modal" data-modal="bronze-modal">View Benefits</a>
+                </div>
+                <div class="level-card">
+                    <h3>Silver Membership</h3>
+                    <p>Intermediate tier with advertising perks.</p>
+                    <a href="#" class="open-modal" data-modal="silver-modal">View Benefits</a>
+                </div>
+                <div class="level-card">
+                    <h3>Gold Membership</h3>
+                    <p>Highest tier with all event & ad benefits.</p>
+                    <a href="#" class="open-modal" data-modal="gold-modal">View Benefits</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modals for Benefits -->
+        <dialog id="np-modal">
+            <button class="close-modal" aria-label="Close modal">&#10005;</button>
+            <h2>Non-Profit Membership</h2>
+            <p><strong>Cost: Free!</strong></p>
+            <p>We believe in supporting organizations that do good. Enjoy a free directory listing, basic networking event access, and a monthly newsletter.</p>
+        </dialog>
+        
+        <dialog id="bronze-modal">
+            <button class="close-modal" aria-label="Close modal">&#10005;</button>
+            <h2>Bronze Membership</h2>
+            <p><strong>Cost: $100/Year</strong></p>
+            <p>Perfect for new startups! Includes directory listing, local business training discounts, and window decal.</p>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <button class="close-modal" aria-label="Close modal">&#10005;</button>
+            <h2>Silver Membership</h2>
+            <p><strong>Cost: $250/Year</strong></p>
+            <p>Mid-tier membership. Includes half-price tickets to the annual Gala, advertising on the Chamber website, and 2 designated spotlight positions!</p>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <button class="close-modal" aria-label="Close modal">&#10005;</button>
+            <h2>Gold Membership</h2>
+            <p><strong>Cost: $500/Year</strong></p>
+            <p>The VIP experience. Includes a free table at our annual gala, homepage spotlights, social media highlights, full access to exclusive CEO luncheons, and more!</p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <p><strong>Recife Chamber of Commerce</strong> - Av. Boa Viagem, Recife - PE</p>
+                <p>+55 (81) 3333-4444, info@recifechamber.org</p>
+            </div>
+
+            <div class="footer-dev">
+                <p>&copy; <span id="currentYear"></span> Francisco de Paula Barros | WDD 231</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

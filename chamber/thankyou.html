@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Recife Chamber of Commerce</title>
+    <meta name="description" content="Thank you for your membership application submission.">
+    <meta name="author" content="Francisco de Paula Barros">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="site-branding">
+                <img src="images/logo.svg" alt="Recife Chamber of Commerce logo" width="20" height="20">
+                <div class="brand-text">
+                    <span class="brand-name">Recife</span>
+                    <span class="brand-subtitle">Chamber of Commerce</span>
+                </div>
+            </div>
+
+            <button id="menuButton" aria-label="Open navigation menu"></button>
+
+            <nav id="navMenu">
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container thankyou-main">
+        <h1>Welcome to the Chamber!</h1>
+        <div class="thank-you-card">
+            <h2>Thank You for Applying</h2>
+            <p>Your application has been received successfully. Below is the information you submitted:</p>
+            
+            <div class="submission-details">
+                <p><strong>Name:</strong> <span id="showFirst"></span> <span id="showLast"></span></p>
+                <p><strong>Email Address:</strong> <span id="showEmail"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="showPhone"></span></p>
+                <p><strong>Business Name:</strong> <span id="showBusiness"></span></p>
+                <p><strong>Date Applied:</strong> <span id="showTimestamp"></span></p>
+            </div>
+            
+            <p>Our membership team will contact you shortly.</p>
+            <a href="index.html" class="cta-button" style="display:inline-block; margin-top:20px;">Return to Homepage</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <p><strong>Recife Chamber of Commerce</strong> - Av. Boa Viagem, Recife - PE</p>
+                <p>+55 (81) 3333-4444, info@recifechamber.org</p>
+            </div>
+
+            <div class="footer-dev">
+                <p>&copy; <span id="currentYear"></span> Francisco de Paula Barros | WDD 231</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
