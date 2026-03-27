@@ -197,18 +197,6 @@ dialog::backdrop {
 .submission-details p {
     margin: 0.5rem 0;
 }
-.cta-button {
-    background-color: var(--secondary-color, #c8102e);
-    color: #FFFFFF;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-}
-.cta-button:hover {
-    background-color: var(--primary-color, #0a3a60);
-}
-
 /* Media Query for larger screens */
 @media screen and (min-width: 800px) {
     .join-layout {
