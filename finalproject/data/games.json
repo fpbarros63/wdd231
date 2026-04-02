@@ -1,0 +1,146 @@
+[
+  {
+    "id": "smb",
+    "title": "Super Mario Bros.",
+    "genre": "Platformer",
+    "platform": "NES",
+    "year": 1985,
+    "description": "A classic platformer game featuring Mario and Luigi journeying through the Mushroom Kingdom to rescue Princess Toadstool.",
+    "image": "images/smb.webp"
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris",
+    "genre": "Puzzle",
+    "platform": "Game Boy",
+    "year": 1989,
+    "description": "An iconic puzzle game where players must rotate and arrange falling blocks to form complete lines.",
+    "image": "images/tetris.webp"
+  },
+  {
+    "id": "zelda",
+    "title": "The Legend of Zelda",
+    "genre": "Action-Adventure",
+    "platform": "NES",
+    "year": 1986,
+    "description": "Follow Link as he explores the land of Hyrule, defeats monsters, and collects the pieces of the Triforce.",
+    "image": "images/zelda.webp"
+  },
+  {
+    "id": "pacman",
+    "title": "Pac-Man",
+    "genre": "Arcade",
+    "platform": "Arcade",
+    "year": 1980,
+    "description": "Navigate a maze, eat all the pac-dots, and avoid ghosts in one of the most famous arcade games of all time.",
+    "image": "images/pacman.webp"
+  },
+  {
+    "id": "sonic",
+    "title": "Sonic the Hedgehog",
+    "genre": "Platformer",
+    "platform": "Genesis",
+    "year": 1991,
+    "description": "Speed through zones, collect rings, and defeat Dr. Robotnik in this iconic Sega platformer.",
+    "image": "images/sonic.webp"
+  },
+  {
+    "id": "doom",
+    "title": "DOOM",
+    "genre": "Shooter",
+    "platform": "PC",
+    "year": 1993,
+    "description": "A pioneering first-person shooter that defined the genre, dropping players onto Mars to battle demonic forces.",
+    "image": "images/doom.webp"
+  },
+  {
+    "id": "ff7",
+    "title": "Final Fantasy VII",
+    "genre": "RPG",
+    "platform": "PlayStation",
+    "year": 1997,
+    "description": "An epic role-playing game following Cloud Strife and Avalanche as they fight against the megacorporation Shinra.",
+    "image": "images/ff7.webp"
+  },
+  {
+    "id": "sf2",
+    "title": "Street Fighter II",
+    "genre": "Fighting",
+    "platform": "Arcade",
+    "year": 1991,
+    "description": "The competitive fighting game that revolutionized the genre, featuring a diverse cast of world warriors.",
+    "image": "images/sf2.webp"
+  },
+  {
+    "id": "sotn",
+    "title": "Castlevania: SotN",
+    "genre": "Platformer",
+    "platform": "PlayStation",
+    "year": 1997,
+    "description": "Explore Dracula's castle as Alucard in this masterpiece that helped define the Metroidvania genre.",
+    "image": "images/sotn.webp"
+  },
+  {
+    "id": "chrono",
+    "title": "Chrono Trigger",
+    "genre": "RPG",
+    "platform": "SNES",
+    "year": 1995,
+    "description": "A legendary time-traveling RPG created by a dream team of developers.",
+    "image": "images/chrono.webp"
+  },
+  {
+    "id": "supermetroid",
+    "title": "Super Metroid",
+    "genre": "Platformer",
+    "platform": "SNES",
+    "year": 1994,
+    "description": "Guide bounty hunter Samus Aran through the labyrinthine planet of Zebes to retrieve the infant Metroid.",
+    "image": "images/supermetroid.webp"
+  },
+  {
+    "id": "mgs",
+    "title": "Metal Gear Solid",
+    "genre": "Action-Adventure",
+    "platform": "PlayStation",
+    "year": 1998,
+    "description": "Infiltrate a nuclear weapons facility in this cinematic and genre-defining stealth action game.",
+    "image": "images/mgs.webp"
+  },
+  {
+    "id": "spaceinvaders",
+    "title": "Space Invaders",
+    "genre": "Arcade",
+    "platform": "Arcade",
+    "year": 1978,
+    "description": "Defend the Earth from waves of descending aliens in this seminal arcade classic.",
+    "image": "images/space.webp"
+  },
+  {
+    "id": "dkc",
+    "title": "Donkey Kong Country",
+    "genre": "Platformer",
+    "platform": "SNES",
+    "year": 1994,
+    "description": "A breakthrough platformer known for its pre-rendered 3D graphics and engaging gameplay.",
+    "image": "images/dkc.webp"
+  },
+  {
+    "id": "halflife",
+    "title": "Half-Life",
+    "genre": "Shooter",
+    "platform": "PC",
+    "year": 1998,
+    "description": "A groundbreaking narrative-driven shooter where you must survive an alien invasion at the Black Mesa Research Facility.",
+    "image": "images/halflife.webp"
+  },
+  {
+    "id": "pokemon",
+    "title": "Pokémon Red",
+    "genre": "RPG",
+    "platform": "Game Boy",
+    "year": 1996,
+    "description": "Catch, train, and battle 151 different creatures in your quest to become a Pokémon Master.",
+    "image": "images/pokemon.webp"
+  }
+]

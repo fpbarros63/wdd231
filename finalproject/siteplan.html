@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game Library - Site Plan</title>
+    <meta name="description" content="Site plan and design document for the Retro Game Library WDD 231 final project.">
+    <meta name="author" content="Francisco de Paula Barros">
+
+    <!-- Fonts: Retro pixel font for headings, clean sans-serif for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Styles specifically for the site plan -->
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Retro Game Library - Site Plan</h1>
+            <h2>Francisco de Paula Barros | WDD 231</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SITE NAME & PURPOSE -->
+        <section class="plan-card">
+            <h3>1. Site Name and Purpose</h3>
+            <p><strong>Site Name:</strong> Retro Game Library</p>
+            <p><em>Reason:</em> This name effectively conveys the purpose of the website, which is to serve as an interactive archive and personal
+            collection of classic video games.</p>
+            
+            <p><strong>Site Purpose:</strong></p>
+            <p>This website is designed to be a dynamic platform for retro gaming enthusiasts to learn about classic console games,
+            view their metadata (such as platform, genre, and release year), and maintain their own personalized "Favorites" list
+            via browser local storage.</p>
+        </section>
+
+        <!-- SCENARIOS -->
+        <section class="plan-card">
+            <h3>2. Scenarios</h3>
+            <p>Target audience questions that drive the content layout:</p>
+            <ul class="scenario-list">
+                <li><em>"How can I quickly find all the classic RPGs available in the library?"</em></li>
+                <li><em>"What year did Chrono Trigger come out and what console was it on?"</em></li>
+                <li><em>"How do I save a list of games I want to play later so I don't forget?"</em></li>
+            </ul>
+        </section>
+
+        <!-- COLOR SCHEME -->
+        <section class="plan-card">
+            <h3>3. Color Scheme</h3>
+            <p>A palette balancing a dark blue aesthetic (evoking classic tech/consoles) with vibrant retro accents.</p>
+            <div class="color-palette">
+                <!-- Primary -->
+                <div class="color-swatch">
+                    <div class="swatch-box" style="background-color: #2c3e50;"></div>
+                    <p><strong>Primary Color</strong><br>#2c3e50</p>
+                    <p class="color-use">Used for: Header backgrounds, primary text headings, and main footer.</p>
+                </div>
+                <!-- Secondary -->
+                <div class="color-swatch">
+                    <div class="swatch-box" style="background-color: #e74c3c;"></div>
+                    <p><strong>Secondary Color</strong><br>#e74c3c</p>
+                    <p class="color-use">Used for: Call-to-action buttons, active navigation links, and removed-favorite buttons.</p>
+                </div>
+                <!-- Accent -->
+                <div class="color-swatch">
+                    <div class="swatch-box" style="background-color: #f39c12;"></div>
+                    <p><strong>Accent Color</strong><br>#f39c12</p>
+                    <p class="color-use">Used for: Highlighted buttons (Add to Favs) and hover accents.</p>
+                </div>
+                <!-- Background -->
+                <div class="color-swatch">
+                    <div class="swatch-box" style="background-color: #f4f6f7; border: 1px solid #ccc;"></div>
+                    <p><strong>Background</strong><br>#f4f6f7</p>
+                    <p class="color-use">Used for: Main body background, behind white game cards.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TYPOGRAPHY -->
+        <section class="plan-card">
+            <h3>4. Typography</h3>
+            <p>Two distinct Google fonts establish the retro yet readable theme:</p>
+            <div class="typography-sample">
+                <div class="font-group">
+                    <h4 style="font-family: 'Press Start 2P', cursive;">Font: 'Press Start 2P'</h4>
+                    <p><strong>Usage:</strong> Main site titles (H1) and the primary Branding Logo text to establish the retro gaming theme.</p>
+                    <p class="font-demo" style="font-family: 'Press Start 2P', cursive;">The Quick Brown Fox</p>
+                </div>
+                <div class="font-group">
+                    <h4 style="font-family: 'Open Sans', sans-serif;">Font: 'Open Sans'</h4>
+                    <p><strong>Usage:</strong> All general body text (paragraphs, info lists, game descriptions) to ensure high readability and accessibility.</p>
+                    <p class="font-demo" style="font-family: 'Open Sans', sans-serif;">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WIREFRAME -->
+        <section class="plan-card">
+            <h3>5. Wireframe Layouts</h3>
+            <p>Sketches mapping the mobile and desktop (larger viewport) versions of the Home Page.</p>
+            <div class="wireframe-grid">
+                <div class="wireframe-box">
+                    <h4>Mobile View (Smartphone)</h4>
+                    <img src="https://placehold.co/300x500/eee/999?text=Mobile+Wireframe%n-Header%n-Hero+Unit%n-Filter+Buttons%n-[Card+1]+%n-[Card+2]%n-Footer" alt="Mobile Wireframe Sketch" loading="lazy">
+                    <p>Single column layout for cards.</p>
+                </div>
+                <div class="wireframe-box">
+                    <h4>Desktop View</h4>
+                    <img src="https://placehold.co/600x400/eee/999?text=Desktop+Wireframe%n-Header+%2B+Nav(Horizontal)%n-Hero+Unit%n-Filter+Buttons%n-[Card1]..[Card2]..[Card3]%n-Footer" alt="Desktop Wireframe Sketch" loading="lazy">
+                    <p>Grid layout supporting 3 or 4 columns.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 | Retro Game Library Site Plan | Francisco de Paula Barros</p>
+        </div>
+    </footer>
+</body>
+
+</html>

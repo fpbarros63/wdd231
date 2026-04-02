@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest a Game - Retro Game Library</title>
+    <meta name="description" content="Suggest a new classic retro video game to be added to our library.">
+    <meta name="author" content="Fernando Barros">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Suggest a Game - Retro Game Library">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fpbarros63.github.io/wdd231/finalproject/suggest.html">
+    <meta property="og:image" content="https://placehold.co/800x400?text=Retro+Game+Library">
+    <meta property="og:description" content="Suggest a new classic retro video game to be added to our library.">
+    
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- JavaScript Modules -->
+    <script type="module" src="scripts/global.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 id="brand">Retro Game Library</h1>
+            <button id="menu-button" aria-expanded="false" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li class="active"><a href="suggest.html">Suggest a Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-main">
+        <div class="hero">
+            <h2>Suggest a Classic</h2>
+            <p>Don't see your favorite retro game? Let us know!</p>
+        </div>
+
+        <section class="form-section">
+            <form method="get" action="thanks.html" class="custom-form">
+                <fieldset>
+                    <legend>Game Details</legend>
+                    
+                    <label for="gametitle">Game Title *</label>
+                    <input type="text" id="gametitle" name="gametitle" required placeholder="e.g. EarthBound">
+
+                    <label for="platform">Platform *</label>
+                    <select id="platform" name="platform" required>
+                        <option value="" disabled selected>Select a console...</option>
+                        <option value="nes">NES</option>
+                        <option value="snes">SNES</option>
+                        <option value="n64">Nintendo 64</option>
+                        <option value="genesis">Sega Genesis</option>
+                        <option value="ps1">PlayStation 1</option>
+                        <option value="arcade">Arcade</option>
+                        <option value="pc">PC Classic</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="releaseyear">Release Year</label>
+                    <input type="number" id="releaseyear" name="releaseyear" min="1970" max="2005" placeholder="e.g. 1994">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Contact Info</legend>
+
+                    <label for="username">Your Name</label>
+                    <input type="text" id="username" name="username" placeholder="John Doe">
+
+                    <label for="useremail">Email Address *</label>
+                    <input type="email" id="useremail" name="useremail" required placeholder="john@example.com">
+                    
+                    <label for="comments">Why should we add it?</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="It's a masterpiece because..."></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit Suggestion" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> | Retro Game Library | Your Name</p>
+            <p><a href="attributions.html">Attributions & Sources</a> | <a href="video.html" target="_blank">Video Demonstration</a></p>
+        </div>
+    </footer>
+</body>
+</html>

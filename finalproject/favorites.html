@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites - Retro Game Library</title>
+    <meta name="description" content="View your saved classic video games in your personal favorites library.">
+    <meta name="author" content="Fernando Barros">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="My Favorites - Retro Game Library">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fpbarros63.github.io/wdd231/finalproject/favorites.html">
+    <meta property="og:image" content="https://placehold.co/800x400?text=Retro+Game+Library">
+    <meta property="og:description" content="View your saved classic video games in your personal favorites library.">
+    
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- JavaScript Modules -->
+    <script type="module" src="scripts/favorites.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 id="brand">Retro Game Library</h1>
+            <button id="menu-button" aria-expanded="false" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="favorites.html">My Favorites</a></li>
+                <li><a href="suggest.html">Suggest a Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>Your Saved Collection</h2>
+            <p>Here are the games you have saved to your favorites (stored via LocalStorage).</p>
+        </div>
+
+        <section class="catalog-section" id="favorites-section">
+            <div id="favorites-container" class="grid-layout">
+                <!-- Saved Game Cards will be injected here via JavaScript -->
+            </div>
+            <div id="no-favorites-msg" style="display: none;">
+                <p>You haven't saved any games yet! <a href="index.html">Go back to the catalog</a> to find some favorites.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> | Retro Game Library | Your Name</p>
+            <p><a href="attributions.html">Attributions & Sources</a> | <a href="video.html" target="_blank">Video Demonstration</a></p>
+        </div>
+    </footer>
+
+    <!-- MODAL DIALOG STRUCTURE -->
+    <dialog id="game-modal">
+        <div class="modal-content">
+            <button id="close-modal" aria-label="Close modal">&times;</button>
+            <h2 id="modal-title">Game Title</h2>
+            <p><strong>Platform:</strong> <span id="modal-platform"></span></p>
+            <p><strong>Year:</strong> <span id="modal-year"></span></p>
+            <p><strong>Genre:</strong> <span id="modal-genre"></span></p>
+            <p id="modal-description">Game Description here...</p>
+        </div>
+    </dialog>
+</body>
+</html>

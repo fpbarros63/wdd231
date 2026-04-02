@@ -1,0 +1,267 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --accent-color: #f39c12;
+  --bg-color: #f4f6f7;
+  --text-color: #333;
+  --card-bg: #fff;
+  --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1#brand {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#menu-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#primary-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+#primary-nav ul.open {
+  display: block;
+}
+
+#primary-nav li a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#primary-nav li a:hover, 
+#primary-nav li.active a {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+main {
+  padding: 1.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#filter-buttons button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+#filter-buttons button:hover, 
+#filter-buttons button.active {
+  background: var(--secondary-color);
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.game-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.game-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.card-info {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.actions {
+  margin-top: auto;
+}
+
+.fav-btn, .details-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.details-btn {
+  background: #34495e;
+  color: white;
+}
+.details-btn:hover { background: #2c3e50; }
+
+.fav-btn {
+  background: var(--accent-color);
+  color: #fff;
+}
+.fav-btn:hover { background: #e67e22; }
+
+.fav-btn.remove-fav {
+  background: var(--secondary-color);
+}
+.fav-btn.remove-fav:hover { background: #c0392b; }
+
+/* MODAL */
+dialog {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  max-width: 90vw;
+  width: 400px;
+  padding: 0;
+}
+dialog::backdrop {
+  background: rgba(0,0,0,0.7);
+}
+.modal-content {
+  padding: 1.5rem;
+  position: relative;
+}
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+#close-modal:hover { color: var(--secondary-color); }
+
+/* FORMS */
+form.custom-form {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+legend {
+  padding: 0 0.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+select, 
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+.submit-btn {
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.submit-btn:hover {
+  background: #c0392b;
+}
+
+/* FOOTER */
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}

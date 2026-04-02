@@ -1,0 +1,37 @@
+@media screen and (min-width: 600px) {
+  #menu-button {
+    display: none;
+  }
+  
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+
+  #primary-nav {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #primary-nav ul {
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #primary-nav li a {
+    border-top: none;
+    padding: 1rem 2rem;
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  form.custom-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

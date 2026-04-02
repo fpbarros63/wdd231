@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Retro Game Library</title>
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/global.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const title = urlParams.get('gametitle');
+            if(title) {
+                document.getElementById('submitted-title').textContent = title;
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 id="brand">Retro Game Library</h1>
+            <button id="menu-button" aria-expanded="false" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">My Favorites</a></li>
+                <li><a href="suggest.html">Suggest a Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thanks-main">
+        <div class="hero">
+            <h2>Thank You!</h2>
+            <p>Your suggestion for <strong id="submitted-title">a classic game</strong> has been received.</p>
+            <a href="index.html" class="submit-btn" style="text-decoration:none; display:inline-block; margin-top:20px;">Return to Catalog</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> | Retro Game Library | Your Name</p>
+            <p><a href="attributions.html">Attributions & Sources</a> | <a href="video.html" target="_blank">Video Demonstration</a></p>
+        </div>
+    </footer>
+</body>
+</html>

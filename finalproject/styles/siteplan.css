@@ -1,0 +1,173 @@
+/* Site Plan CSS - Specifically styling the siteplan.html applying the chosen colors/fonts */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --accent-color: #f39c12;
+    --bg-color: #f4f6f7;
+    --text-color: #333;
+    
+    --font-heading: 'Press Start 2P', cursive;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    color: #ccc;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+main, .container{
+    margin-top: 2rem;
+}
+
+.plan-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.plan-card h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.scenario-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background: #f9f9f9;
+    border-left: 3px solid var(--primary-color);
+}
+
+/* Color Scheme Grid */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.color-swatch {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.swatch-box {
+    height: 80px;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.color-use {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Typography Grid */
+.typography-sample {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .typography-sample {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.font-group {
+    background: #fafafa;
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    border-radius: 4px;
+}
+
+.font-group h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.font-demo {
+    font-size: 1.2rem;
+    padding: 1rem;
+    background: #fff;
+    border-left: 3px solid var(--secondary-color);
+    margin-top: 1rem;
+}
+
+/* Wireframes */
+.wireframe-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .wireframe-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.wireframe-box {
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+}
+
+.wireframe-box img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #999;
+}
+
+footer {
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
