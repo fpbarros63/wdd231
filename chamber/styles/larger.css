@@ -88,6 +88,21 @@
   .spotlights-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Medium layout for Discover */
+  .discover-layout {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: 
+          "sidebar gallery";
+  }
+
+  .discover-card {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+          "title title"
+          "figure desc"
+          "address btn";
+  }
 }
 
 @media only screen and (min-width: 64rem) {
@@ -101,5 +116,25 @@
 
   .hero-overlay h1 {
     font-size: 2.4rem;
+  }
+
+  /* Large layout for Discover */
+  .discover-card {
+      grid-template-columns: 300px 1fr;
+      grid-template-areas: 
+          "figure title"
+          "figure address"
+          "figure desc"
+          "figure btn";
+  }
+  
+  .discover-card img {
+      transition: all 0.3s ease;
+  }
+
+  .discover-card img:hover {
+      filter: sepia(0.3) contrast(1.2);
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
   }
 }
