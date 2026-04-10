@@ -14,6 +14,11 @@
     <meta property="og:image" content="https://fpbarros63.github.io/wdd231/finalproject/images/smb.jpg">
     <meta property="og:description" content="Suggest a new classic retro video game to be added to our library.">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- CSS Linking -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -27,7 +32,10 @@
 <body>
     <header>
         <div class="header-inner">
-            <h1 id="brand">Retro Game Library</h1>
+            <div style="display:flex; align-items:center; gap:10px;">
+                <img src="images/pacman.webp" alt="Retro Game Library Pacman Logo" width="40" height="40">
+                <h1 id="brand">Retro Game Library</h1>
+            </div>
             <button id="menu-button" aria-expanded="false" aria-label="Toggle Menu">&#9776;</button>
         </div>
         <nav id="primary-nav">
