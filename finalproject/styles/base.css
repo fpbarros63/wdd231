@@ -267,3 +267,19 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#no-favorites-msg {
+  display: none;
+}
+
+.submit-btn.return-btn {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
