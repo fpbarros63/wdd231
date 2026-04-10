@@ -12,7 +12,6 @@ async function fetchGames() {
         const data = await response.json();
         allGames = data;
         
-        // Extract unique genres for dynamic buttons using Array Map & Set
         genres = ['All', ...new Set(allGames.map(g => g.genre))];
         
         displayGames(allGames);
